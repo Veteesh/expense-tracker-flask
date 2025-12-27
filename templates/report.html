@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+<div class="card">
+<h2>Report for {{ month }}</h2>
+
+{% if data %}
+    {% for row in data %}
+        <p>
+            {{ row['type'] }} |
+            {{ row['category'] }} :
+            ₹{{ row['total'] }}
+        </p>
+    {% endfor %}
+{% else %}
+    <p>No transactions found for this month</p>
+{% endif %}
+
+<a href="/">Go Back</a>
+    </div>
+</body>
+</html>

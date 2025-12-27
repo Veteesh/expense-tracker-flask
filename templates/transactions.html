@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Transactions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+<div class="table-container card">
+    <div class="nav">
+        <a href="/">⬅ Dashboard</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <h2>My Transactions</h2>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Amount</th>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Description</th>
+        </tr>
+
+        {% for t in transactions %}
+        <tr>
+            <td>{{ t.id }}</td>
+            <td>{{ t.amount }}</td>
+            <td>{{ t.type }}</td>
+            <td>{{ t.category }}</td>
+            <td>{{ t.date }}</td>
+            <td>{{ t.description }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

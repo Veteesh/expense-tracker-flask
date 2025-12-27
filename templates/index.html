@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+<h2>Welcome to Expense Tracker</h2>
+
+<form action="/report" method="post">
+    <label>Select Month:</label>
+    <input type="month" name="month" required>
+    <button type="submit">Get Monthly Report</button>
+</form>
+
+<br>
+<a href="/logout">Logout</a>
+
+</body>
+</html>

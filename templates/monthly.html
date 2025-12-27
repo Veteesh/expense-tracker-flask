@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h1>Monthly Report</h1>
+
+    <form action="/report" method="post">
+        <input type="month" name="month" required>
+        <button>Get Monthly Report</button>
+    </form>
+
+    <a class="link" href="/">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>

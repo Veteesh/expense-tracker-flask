@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #eef3f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    display: grid;
+    height: auto;
+}
+
+/* HEADINGS */
+.card h1 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+button, .btn {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover, .btn:hover {
+    background: #43a047;
+}
+
+/* LINKS */
+.link {
+    display: block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+/* TABLE */
+.table-container {
+    width: 900px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f4f6f8;
+}
+
+/* NAV BAR */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: 600;
+}
+/*Register link*/
+.register-link a{
+    color: #43a047;
+}
