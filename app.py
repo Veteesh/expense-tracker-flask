@@ -189,6 +189,7 @@ def monthly_report(month):
 
 
 # ---------------- RUN APP ----------------
-if __name__ == '__main__':
+if __name__ == "__main__":
     create_tables()
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
+
